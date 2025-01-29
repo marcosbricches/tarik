@@ -25,7 +25,7 @@ export default function NewServicePage() {
   return (
     <div className="container mx-auto py-10">
       <div className="mb-6">
-        <Link href="/services" className="flex items-center text-muted-foreground hover:text-primary">
+        <Link href="/operational/services" className="flex items-center text-muted-foreground hover:text-primary">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Voltar para lista
         </Link>
@@ -127,7 +127,7 @@ export default function NewServicePage() {
             </div>
 
             <div className="flex justify-end gap-4">
-              <Link href="/services">
+              <Link href="/operational/services">
                 <Button variant="outline">Cancelar</Button>
               </Link>
               <Button type="submit">Salvar</Button>

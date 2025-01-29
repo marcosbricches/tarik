@@ -15,19 +15,21 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { Badge } from "@/components/ui/badge"
+import {
+  Badge,
+} from "@/components/ui/badge"
 import { PlusCircle, Search } from "lucide-react"
 import Link from "next/link"
 
-export default function CargoTypesPage() {
+export default function ServicesPage() {
   return (
     <div className="container mx-auto py-10">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold">Tipos de Carga</h1>
-        <Link href="/cargo-types/new">
+        <h1 className="text-3xl font-bold">Gestão de Serviços</h1>
+        <Link href="/operational/services/new">
           <Button>
             <PlusCircle className="mr-2 h-4 w-4" />
-            Novo Tipo de Carga
+            Novo Serviço
           </Button>
         </Link>
       </div>
@@ -52,6 +54,26 @@ export default function CargoTypesPage() {
             <SelectItem value="all">Todos</SelectItem>
           </SelectContent>
         </Select>
+        <Select>
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder="Tipo de Veículo" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="truck">Caminhão</SelectItem>
+            <SelectItem value="van">Van</SelectItem>
+            <SelectItem value="car">Carro</SelectItem>
+          </SelectContent>
+        </Select>
+        <Select>
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder="Tipo de Carga" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="general">Geral</SelectItem>
+            <SelectItem value="refrigerated">Refrigerada</SelectItem>
+            <SelectItem value="dangerous">Perigosa</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
       <div className="border rounded-lg">
@@ -59,8 +81,11 @@ export default function CargoTypesPage() {
           <TableHeader>
             <TableRow>
               <TableHead>ID</TableHead>
-              <TableHead>Categoria</TableHead>
-              <TableHead>Subcategorias</TableHead>
+              <TableHead>Nome</TableHead>
+              <TableHead>Tipo de Tarifa</TableHead>
+              <TableHead>Tipo de Veículo</TableHead>
+              <TableHead>Tipo de Carga</TableHead>
+              <TableHead>Valor</TableHead>
               <TableHead>Status</TableHead>
               <TableHead className="text-right">Ações</TableHead>
             </TableRow>
@@ -68,19 +93,18 @@ export default function CargoTypesPage() {
           <TableBody>
             <TableRow>
               <TableCell>001</TableCell>
-              <TableCell>Inflamáveis</TableCell>
+              <TableCell>Entrega Expressa Luanda</TableCell>
               <TableCell>
-                <div className="flex gap-2">
-                  <Badge variant="secondary">Diesel</Badge>
-                  <Badge variant="secondary">Gasolina</Badge>
-                  <Badge variant="secondary">Querosene</Badge>
-                </div>
+                <Badge variant="secondary">Tarifa Fixa</Badge>
               </TableCell>
+              <TableCell>Van</TableCell>
+              <TableCell>Geral</TableCell>
+              <TableCell>40.000,00 Kz</TableCell>
               <TableCell>
-                <Badge variant="secondary">Ativo</Badge>
+                <Badge variant="default">Ativo</Badge>
               </TableCell>
               <TableCell className="text-right">
-                <Link href="/cargo-types/1/edit">
+                <Link href="/operational/services/1">
                   <Button variant="ghost" size="sm">
                     Editar
                   </Button>
@@ -89,18 +113,18 @@ export default function CargoTypesPage() {
             </TableRow>
             <TableRow>
               <TableCell>002</TableCell>
-              <TableCell>Perecíveis</TableCell>
+              <TableCell>Transporte por KM</TableCell>
               <TableCell>
-                <div className="flex gap-2">
-                  <Badge variant="secondary">Alimentos</Badge>
-                  <Badge variant="secondary">Medicamentos</Badge>
-                </div>
+                <Badge variant="secondary">Tarifa Variável</Badge>
               </TableCell>
+              <TableCell>Caminhão</TableCell>
+              <TableCell>Refrigerada</TableCell>
+              <TableCell>69 Kz/Km</TableCell>
               <TableCell>
-                <Badge variant="secondary">Ativo</Badge>
+                <Badge variant="default">Ativo</Badge>
               </TableCell>
               <TableCell className="text-right">
-                <Link href="/cargo-types/2/edit">
+                <Link href="/operational/services/2">
                   <Button variant="ghost" size="sm">
                     Editar
                   </Button>

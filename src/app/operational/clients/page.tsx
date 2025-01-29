@@ -23,7 +23,7 @@ export default function ClientsPage() {
     <div className="container mx-auto py-10">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Gestão de Clientes</h1>
-        <Link href="/clients/new">
+        <Link href="/operational/clients/new">
           <Button>
             <PlusCircle className="mr-2 h-4 w-4" />
             Novo Cliente
@@ -79,7 +79,7 @@ export default function ClientsPage() {
                 </span>
               </TableCell>
               <TableCell className="text-right">
-                <Link href="/clients/1/edit">
+                <Link href="/operational/clients/1">
                   <Button variant="ghost" size="sm">
                     Editar
                   </Button>

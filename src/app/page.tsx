@@ -21,6 +21,11 @@ const modules: Module[] = [
     description: "Gerenciamento completo da frota de veículos",
     pages: [
       {
+        name: "Mapa de Veículos",
+        path: "/fleet/map",
+        status: "ready"
+      },
+      {
         name: "Tipos de Veículos",
         path: "/fleet/vehicle-types",
         status: "ready"
@@ -43,11 +48,6 @@ const modules: Module[] = [
       {
         name: "Check-lists",
         path: "/fleet/checklist",
-        status: "ready"
-      },
-      {
-        name: "Mapa de Veículos",
-        path: "/fleet/map",
         status: "ready"
       }
     ]

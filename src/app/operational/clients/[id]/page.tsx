@@ -13,7 +13,7 @@ export default function ClientDetailsPage() {
   return (
     <div className="container mx-auto py-10">
       <div className="mb-6">
-        <Link href="/clients" className="flex items-center text-muted-foreground hover:text-primary">
+        <Link href="/operational/clients" className="flex items-center text-muted-foreground hover:text-primary">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Voltar para lista
         </Link>
@@ -21,7 +21,7 @@ export default function ClientDetailsPage() {
 
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Detalhes do Cliente</h1>
-        <Link href="/clients/1/edit">
+        <Link href="/operational/clients/1">
           <Button>
             <PenSquare className="mr-2 h-4 w-4" />
             Editar Cliente
