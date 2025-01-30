@@ -16,6 +16,85 @@ interface Module {
 
 const modules: Module[] = [
   {
+    title: "Manutenção e Oficina",
+    path: "/maintenance",
+    description: "Gestão completa de manutenções, estoque e check-lists",
+    pages: [
+      {
+        name: "Check-lists",
+        path: "/maintenance/checklists",
+        status: "ready"
+      },
+      {
+        name: "Oficina: Realizar Check-list",
+        path: "/maintenance/workshop-checklist",
+        status: "ready"
+      },
+      {
+        name: "Produtos",
+        path: "/maintenance/products",
+        status: "ready"
+      },
+      {
+        name: "Fornecedores",
+        path: "/maintenance/suppliers",
+        status: "ready"
+      },
+      {
+        name: "Gestão de Estoque",
+        path: "/maintenance/inventory",
+        status: "ready"
+      },
+      {
+        name: "Itens de Manutenção",
+        path: "/maintenance/maintenance-items",
+        status: "ready"
+      },
+      {
+        name: "Gestão de Manutenções",
+        path: "/maintenance/workshop",
+        status: "ready"
+      }
+    ]
+  },
+  {
+    title: "Operacional",
+    path: "/operational",
+    description: "Gestão de cargas, serviços e rotas",
+    pages: [
+      {
+        name: "Tipos de Cargas",
+        path: "/operational/cargo-types",
+        status: "ready"
+      },
+      {
+        name: "Clientes",
+        path: "/operational/clients",
+        status: "ready"
+      },
+      {
+        name: "Serviços",
+        path: "/operational/services",
+        status: "ready"
+      },
+      {
+        name: "Ordens",
+        path: "/operational/orders",
+        status: "ready"
+      },
+      {
+        name: "Tracking",
+        path: "/operational/tracking",
+        status: "ready"
+      },
+      {
+        name: "Rotas",
+        path: "/operational/routes",
+        status: "ready"
+      }
+    ]
+  },
+  {
     title: "Gestão de Frota",
     path: "/fleet",
     description: "Gerenciamento completo da frota de veículos",
