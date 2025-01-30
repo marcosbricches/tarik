@@ -37,7 +37,7 @@ export default function OrdersPage() {
     <Download className="w-4 h-4 mr-2" />
     Exportar PDF
   </Button>
-  <Link href="/orders/new">
+  <Link href="/operational/orders/new">
     <Button>
       <Plus className="w-4 h-4 mr-2" />
       Novo Pedido
@@ -121,16 +121,16 @@ export default function OrdersPage() {
             <TableCell>R$ 1.500,00</TableCell>
             <TableCell className="text-right">
             <div className="flex justify-end gap-2">
-            <Link href={`/orders/123`}>
+            <Link href={`/operational/orders/123`}>
     <Button variant="outline" size="sm">Ver Detalhes</Button>
   </Link>
-  <Link href={`/orders/123/edit`}>
+  <Link href={`/operational/orders/123/edit`}>
     <Button variant="outline" size="sm">Editar</Button>
   </Link>
-  <Link href={`/orders/123/tracking`}>
+  <Link href={`/operational/orders/123/tracking`}>
     <Button variant="outline" size="sm">Ver Rota</Button>
   </Link>
-  <Link href={`/orders/123/schedule`}>
+  <Link href={`/operational/orders/123/schedule`}>
     <Button size="sm">Agendar</Button>
   </Link>
 </div>

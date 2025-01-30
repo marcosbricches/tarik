@@ -40,25 +40,25 @@ export default function OrderDetailsPage() {
           </div>
         </div>
         <div className="flex gap-2">
-  <Link href={`/orders/123/route`}>
+  <Link href={`/operational/orders/123/route`}>
     <Button variant="outline">
       <Route className="w-4 h-4 mr-2" />
       Ver Rota
     </Button>
   </Link>
-  <Link href={`/orders/123/tracking`}>
+  <Link href={`/operational/orders/123/tracking`}>
     <Button variant="outline">
       <Navigation className="w-4 h-4 mr-2" />
       Rastreamento em Tempo Real
     </Button>
   </Link>
-  <Link href={`/orders/123/schedule`}>
+  <Link href={`/operational/orders/123/schedule`}>
     <Button variant="outline">
       <CalendarClock className="w-4 h-4 mr-2" />
       Agendar
     </Button>
   </Link>
-  <Link href={`/orders/123/edit`}>
+  <Link href={`/operational/orders/123/edit`}>
     <Button>
       <Edit className="w-4 h-4 mr-2" />
       Editar

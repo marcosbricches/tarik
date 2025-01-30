@@ -23,7 +23,7 @@ export default function OrderSchedulePage() {
     <div className="p-6 space-y-6">
       <div className="flex justify-between items-center">
         <div className="space-y-1">
-          <Link href="/orders/123">
+          <Link href="/operational/orders/123">
             <Button variant="ghost" size="sm">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Voltar ao pedido
@@ -116,7 +116,7 @@ export default function OrderSchedulePage() {
             </Card>
 
             <div className="flex gap-2">
-              <Link href="/orders/123" className="w-full">
+              <Link href="/operational/orders/123" className="w-full">
                 <Button variant="outline" className="w-full">Cancelar</Button>
               </Link>
               <Button className="w-full">Confirmar Agendamento</Button>

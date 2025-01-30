@@ -26,14 +26,14 @@ export default function RoutesPage() {
             <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Gestão de Rotas</h1>
         <div className="flex gap-2">
-          <Link href="/routes/config">
+          <Link href="/operational/routes/config">
             <Button variant="outline">
               <Settings2 className="h-4 w-4 mr-2" />
               Configurações
             </Button>
           </Link>
           <Button variant="outline">Exportar</Button>
-          <Link href="/routes/new">
+          <Link href="/operational/routes/new">
           <Button>Nova Rota</Button>
           </Link>
         </div>
@@ -94,7 +94,7 @@ export default function RoutesPage() {
                         <p>6h 30min</p>
                       </div>
                     </div>
-                    <Link href="/routes/123">
+                    <Link href="/operational/routes/123">
                     <Button className="w-full">Ver Detalhes</Button>
                     </Link>
                   </div>

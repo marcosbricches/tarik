@@ -34,7 +34,7 @@ export default function RouteDetailsPage() {
         </div>
         <div className="flex gap-2">
           <Button variant="outline">Recalcular Rota</Button>
-          <Link href={`/routes/${123}/edit`}>
+          <Link href={`/operational/routes/123/edit`}>
           <Button>Editar Rota</Button> </Link>
           
         </div>
