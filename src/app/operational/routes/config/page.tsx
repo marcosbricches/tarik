@@ -1,7 +1,7 @@
 // src/app/routes/config/page.tsx
-import { RiskAreaForm } from "@/app/routes/config/_components/risk-area-form"
-import { RestPointForm } from "@/app/routes/config/_components/rest-point-form"
-import { GasStationForm } from "@/app/routes/config/_components/gas-station-form"
+import { RiskAreaForm } from "@/app/operational/routes/config/_components/risk-area-form"
+import { RestPointForm } from "@/app/operational/routes/config/_components/rest-point-form"
+import { GasStationForm } from "@/app/operational/routes/config/_components/gas-station-form"
 import { Button } from "@/components/ui/button"
 import {
   Card,

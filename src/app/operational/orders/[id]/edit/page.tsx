@@ -1,5 +1,5 @@
 // src/app/orders/[id]/edit/page.tsx
-import { OrderForm } from '@/app/orders/_components/order-form';
+import { OrderForm } from '@/app/operational/orders/_components/order-form';
 
 export default function EditOrderPage() {
     return (
