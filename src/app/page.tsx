@@ -16,6 +16,45 @@ interface Module {
 
 const modules: Module[] = [
   {
+    title: "Notificações e Relatórios",
+    path: "/notifications",
+    description: "Gestão completa de todas as finanças",
+    pages: [
+      {
+        name: "Notificações",
+        path: "/notifications",
+        status: "ready"
+      },
+      {
+        name: "Relatórios",
+        path: "/reports",
+        status: "ready"
+      }
+    ]
+  },
+  {
+    title: "Financeiro",
+    path: "/financial",
+    description: "Gestão completa de todas as finanças",
+    pages: [
+      {
+        name: "Dashboard",
+        path: "/financial",
+        status: "ready"
+      },
+      {
+        name: "Receitas",
+        path: "/financial/revenue",
+        status: "ready"
+      },
+      {
+        name: "Despesas",
+        path: "/financial/expense",
+        status: "ready"
+      }
+    ]
+  },
+  {
     title: "Manutenção e Oficina",
     path: "/maintenance",
     description: "Gestão completa de manutenções, estoque e check-lists",
