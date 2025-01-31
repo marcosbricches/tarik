@@ -16,6 +16,48 @@ interface Module {
 
 const modules: Module[] = [
   {
+    title: "Aplicativo Motorista",
+    path: "/mobile",
+    description: "Aplicativo completo do motorista",
+    pages: [
+      {
+        name: "Dashboard",
+        path: "/mobile/dashboard",
+        status: "ready"
+      },
+      {
+        name: "Checklists",
+        path: "/mobile/checklist/123",
+        status: "ready"
+      },
+      {
+        name: "Combustível",
+        path: "/mobile/fuel",
+        status: "ready"
+      },
+      {
+        name: "Notificações",
+        path: "/mobile/notifications",
+        status: "ready"
+      },
+      {
+        name: "Ocorrências",
+        path: "/mobile/occurrences",
+        status: "ready"
+      },
+      {
+        name: "Viagens",
+        path: "/mobile/trips",
+        status: "ready"
+      },
+      {
+        name: "Configurações",
+        path: "/mobile/settings",
+        status: "ready"
+      }
+    ]
+  },
+  {
     title: "Notificações e Relatórios",
     path: "/notifications",
     description: "Gestão completa de todas as finanças",
